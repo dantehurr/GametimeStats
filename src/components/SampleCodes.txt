@@ -1,0 +1,82 @@
+/****AXIOS CALL****/
+
+import axios from "axios";
+
+var config = {
+    method: 'get',
+    url: 'https://api-nba-v1.p.rapidapi.com/{endpoint}',
+    headers: {
+        'x-rapidapi-key': 'a5bd252617mshcc1a82ac5cc5b16p1273b2jsne720a4d0ab23',
+        'x-rapidapi-host': 'api-nba-v1.p.rapidapi.com'
+    }
+};
+
+axios(config).then( 
+    function (response: any) {
+        console.log("Data: ", JSON.stringify(response.data));
+    })
+    .catch( function (error: any) {
+        console.log("Error getting data: ", error);
+    });
+
+
+/**** GAME CARD SAMPLES ****/
+
+    <IonCard>
+    <IonCardHeader className='game-status'>
+        <IonCardSubtitle >LIVE</IonCardSubtitle>
+        <IonCardSubtitle>Q4 - 10:30</IonCardSubtitle>
+    </IonCardHeader>
+    <IonCardContent className='guestlist'>
+        <IonCardTitle>MEM</IonCardTitle>
+        <IonCardTitle>WSH</IonCardTitle>
+    </IonCardContent>
+    <IonCardContent>
+        <div className='scoreboard'>
+            <h1>98</h1>
+            <h1>108</h1>
+        </div>
+    </IonCardContent>
+</IonCard>
+<IonCard>
+    <IonCardHeader className='game-status'>
+        <IonCardSubtitle>LIVE</IonCardSubtitle>
+    </IonCardHeader>
+    <IonCardContent>
+        <div>
+            <div className='team-scoreboard'>
+                <h1>LAL</h1>
+                <h1>19</h1>
+            </div>
+            <div className='game-time'>
+                <h4>Q4</h4>
+                <h2>10:30</h2>
+            </div>
+            <div className='team-scoreboard'>
+                <h1>DAL</h1>
+                <h1>21</h1>
+            </div>
+        </div>
+    </IonCardContent>
+</IonCard>
+<IonCard>
+    <IonCardHeader className='game-status'>
+        <IonCardSubtitle>TUE 7:10PM</IonCardSubtitle>
+    </IonCardHeader>
+    <IonCardContent>
+    <div>
+            <div className='team-scoreboard'>
+                <h1>LAL</h1>
+                <h1>10 – 5</h1>
+            </div>
+            <div className='game-time'>
+                <h4>Q4</h4>
+                <h2>10:30</h2>
+            </div>
+            <div className='team-scoreboard'>
+                <h1>DAL</h1>
+                <h1>13 – 2</h1>
+            </div>
+        </div>
+    </IonCardContent>
+</IonCard>

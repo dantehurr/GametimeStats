@@ -1,0 +1,66 @@
+ion-card {
+    border: 1px solid #d7ff36;
+    border-radius: 15px;
+    xbox-shadow: none;
+}
+
+/* .guestlist {
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+} */
+/* .team-scoreboard {
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+} */
+.no-games {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    font-family: new-frank, sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.game-time {
+    align-items: center;
+    color: #f5f5f5;
+    display: flex;
+    flex-flow: column;
+    font-family: new-frank, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    justify-content: center;
+}
+.game-status {
+    align-items: center;
+    color: #a5ce00;
+    display: flex;
+    flex-flow: column;
+    font-family: new-frank, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    justify-content: center;
+}
+.location {
+    font-family: new-frank, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+.scoreboard {
+    color: #d7ff36;
+    display: flex;
+    flex-flow: row;
+    font-family: 'Eurostile', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    justify-content: space-between;
+}
